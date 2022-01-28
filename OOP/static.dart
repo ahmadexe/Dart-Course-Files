@@ -1,4 +1,5 @@
 void main(List<String> args) {
+  // Static Method/variable can be acessed using Class name directly without an object
   print(Mobile.Memory);
   Mobile Nokia = Mobile();
   var memoryNow = Nokia.addMemory(6);

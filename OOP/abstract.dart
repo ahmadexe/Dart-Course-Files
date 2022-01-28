@@ -1,24 +1,25 @@
 void main(List<String> args) {  
-  Nokia n = Nokia();
-  n.setter(64, "6.1");
+  Nokia n = Nokia(8,"NOKIA SHSHS");
   n.getter();
 }
 
-abstract class Mobile
+class Mobile
 {
   int? ram;
   String? model;
-  setter(ram,model);
-  getter();
+  Mobile(int ram, String model)
+  {
+    this.model = model;
+    this.ram = ram;
+  }
+  getter(){
+    
+  }
 }
 
 class Nokia extends Mobile
 {
-  @override
-  setter(ram, model) {
-    this.ram = ram;
-    this.model = model;
-  }
+  Nokia(int ram, String model) : super(ram, model);
   getter()
   {
     print("Ram is $ram");

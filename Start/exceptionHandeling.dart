@@ -1,14 +1,17 @@
 void main()
 {
-  try{
+  try
+  {
     int result = 4~/0;
     print(result);
-  } on UnsupportedError
+  } 
+  on UnsupportedError
   {
     print("Don't divide by zero");
   }
 
-  try{
+  try
+  {
     print(5~/0);
   }
   catch (e)

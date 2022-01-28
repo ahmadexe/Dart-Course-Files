@@ -1,5 +1,6 @@
 void main(List<String> args) {
   Mobile m1 = Mobile.memory(64);
+  print(m1.memory);
 }
 
 class Mobile{
