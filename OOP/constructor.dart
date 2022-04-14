@@ -5,18 +5,14 @@ void main(List<String> args) {
 
 class Mobile{
   int? ram;
-  String? Model;
-
-  Mobile(ram,Model)
-  {
-    this.ram = ram;
-    this.Model = Model;
-  }
+  String? model;
+  Mobile(this.ram, this.model);
+  
 
   show()
   {
     print(ram);
-    print(Model);
+    print(model);
   }
 
 }
